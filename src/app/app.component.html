@@ -1,0 +1,14 @@
+<div>
+  <fieldset>
+    <legend style="color:blueviolet">Login Serction : </legend>
+    <h1 style="color:teal">Service</h1>
+    Username : <input type="text" [(ngModel)]="username" name="username" #t1>
+    <br/>
+    <br/> 
+    Password : <input type="password" [(ngModel)]="password" name="password">
+    <br/>
+    <br/>
+    <input type="submit" value="Login" (click)="CheckLogin(t1)"><br/> 
+    <p style="color:deeppink; text-align: center;">{{msg}}</p>
+  </fieldset>
+</div>
